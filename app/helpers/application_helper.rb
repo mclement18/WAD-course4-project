@@ -16,10 +16,20 @@ module ApplicationHelper
   end
 
   def pluralize_comments(comments)
-    "#{comments.count} comments"
+    comments_nb = comments.count
+    if comments_nb == 0 || comments_nb == 1
+      "#{comments_nb} comment"
+    else
+      "#{comments_nb} comments"
+    end
   end
 
   def pluralize_tips(tips)
-    "#{tips.count} tips"
+    tips_nb = tips.count
+    if tips_nb == 0 || tips_nb == 1
+      "#{tips_nb} tip"
+    else
+      "#{tips_nb} tips"
+    end
   end
 end
