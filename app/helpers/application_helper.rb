@@ -5,16 +5,13 @@ module ApplicationHelper
   AVATAR_4 = "https://68.media.tumblr.com/22d1c50c3e2ca1062a94b47a65bfeb6d/tumblr_o51oavbMDx1ugpbmuo10_500.png"
   
   def default_avatar(user)
-    if user.name.present?
-      first_letter = user.name[0].downcase
-      case
-      when first_letter < 'h' then AVATAR_1
-      when first_letter < 'n' then AVATAR_2
-      when first_letter < 'u' then AVATAR_3
-      else AVATAR_4
-      end
-    else
-      AVATAR_1
+    first_letter = user.name[0].downcase if user.name.present?
+    first_letter ||= 'a'
+    case
+    when first_letter < 'h' then AVATAR_1
+    when first_letter < 'n' then AVATAR_2
+    when first_letter < 'u' then AVATAR_3
+    else AVATAR_4
     end
   end
 
