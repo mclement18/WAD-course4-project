@@ -17,7 +17,7 @@
 
   <div class="card-body">
     <p><%= @tip.body %></p>
-    <p class="text-muted">Created by <%= render partial: 'user_link', locals: { user: @tip.user } %> on <%= @tip.created_at %></p>
+    <p class="text-muted">Created by <%= render partial: 'user_link', locals: { user: @tip.user } %> on <%= @tip.created_at.strftime('%e %b %Y at %H:%M') %></p>
   </div>
 
   <div class="card-body">
