@@ -32,3 +32,11 @@
 en:
   signup: 'Sign up'
   login: 'Log in'
+  home:
+    title: 'Share your programming tips with other developers online!'
+    subtitle: '... or find tips about something:'
+    secondtitle: 'Here are the four most recently active tips:'
+  search:
+    label: 'Search term'
+    placeholder: 'e.g. Ruby classes'
+    button: 'Search'
