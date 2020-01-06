@@ -32,6 +32,7 @@
 en:
   signup: 'Sign up'
   login: 'Log in'
+  cancel: 'Cancel'
   home:
     title: 'Share your programming tips with other developers online!'
     subtitle: '... or find tips about something:'
@@ -40,3 +41,18 @@ en:
     label: 'Search term'
     placeholder: 'e.g. Ruby classes'
     button: 'Search'
+  tips:
+    new:
+      title: 'New Tip'
+    edit:
+      title: 'Editing Tip'
+  helper:
+    label:
+      tip:
+        title: 'Title'
+        body: 'Body'
+        user: 'User'
+    submit:
+      tip:
+        create: 'Create Tip'
+        update: 'Update Tip'
