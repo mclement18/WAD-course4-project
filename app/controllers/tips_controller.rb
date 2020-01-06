@@ -2,7 +2,7 @@ class TipsController < ApplicationController
   before_action :set_tip, only: [:show, :edit, :update, :destroy]
 
   def index
-    @tips = Tip.search(params[:q])
+    @tips = Tip.search(params[:q]).page(params[:page]).per(8)
   end
 
   def show
