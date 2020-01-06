@@ -1,5 +1,5 @@
 <div class="row mt-4 mb-4">
-  <h1 class="col-12 text-center display-4">Edit User details</h1>
+  <h1 class="col-12 text-center display-4"><%= translate 'users.edit.title' %></h1>
 </div>
 <div class="row">
   <%= form_for(@user, html: { class: 'col-lg-10 offset-lg-1' }) do |form| %>
@@ -30,10 +30,10 @@
 
     <fieldset class="form-group row d-flex flex-row-reverse">
       <div class="col-md-10">
-        <%= form.submit 'Update', class: 'btn btn-primary btn-block mb-2' %>
+        <%= form.submit class: 'btn btn-primary btn-block mb-2' %>
       </div>
       <div class="col-md-2">
-        <%= link_to 'Cancel', user_path(@user), class: 'btn btn-light btn-block' %>
+        <%= link_to translate('cancel'), user_path(@user), class: 'btn btn-light btn-block' %>
       </div>
     </fieldset>
   <% end %>

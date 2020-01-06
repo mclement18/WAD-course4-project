@@ -46,13 +46,26 @@ en:
       title: 'New Tip'
     edit:
       title: 'Editing Tip'
-  helper:
+  users:
+    new:
+      title: 'Sign up'
+    edit:
+      title: 'Edit User details'
+  helpers:
     label:
       tip:
         title: 'Title'
         body: 'Body'
         user: 'User'
+      user:
+        email: 'Email'
+        name: 'Name'
+        avatar_url: 'Avatar URL'
+        password: 'Password'
     submit:
       tip:
         create: 'Create Tip'
         update: 'Update Tip'
+      user:
+        create: 'Sign up'
+        update: 'Update'
