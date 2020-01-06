@@ -36,12 +36,12 @@ Tip.create!(title: 'Using ERB in CSS and Sass files',
 Tip.create!(title: 'Substitute a value in a String',
             body:  "String#gsub can be used to replace any substring with another substring in a String, e.g. 'Learn about :language'.gsub(':language', 'JavaScript') => \"Learn about JavaScript\"",
             user:  sara)
-            Tip.create!(title: 'Multi-line Strings using %Q',
-                        body:  percent_q_string,
-                        user:  sara)
-Tip.create!(title: 'Using underscores in numbers',
-            body:  "It's pretty cool that underscores can be used to define numbers in Ruby, such as 16_453 or 12_345_678.  It can make big numbers much more readable!",
+Tip.create!(title: 'Multi-line Strings using %Q',
+            body:  percent_q_string,
             user:  sara)
+tip_1 = Tip.create!(title: 'Using underscores in numbers',
+                    body:  "It's pretty cool that underscores can be used to define numbers in Ruby, such as 16_453 or 12_345_678.  It can make big numbers much more readable!",
+                    user:  sara)
 Tip.create!(title: 'Calculate a number to a power',
             body:  'Use ** to calculate the number to a particular power, e.g. 2**5 => 32', user: sara)
 
@@ -54,6 +54,19 @@ Tip.create!(title: 'Try using grep with log files',
 Tip.create!(title: 'Organize CSS rules in Sass files well',
             body:  "It's worth taking the time to organize CSS rules in various Sass files, keeping related rules together.  It helps someone new to a project know where to look for particular rules.",
             user:  linda)
-Tip.create!(title: 'Just experiment!',
-            body:  "The great thing about writing software is that it's easy to try things out and change them before submitting it for a production deployment.  I've found that taking a break and coming back to a difficult programming problem really helps too.",
-            user:  linda)
+tip_2 = Tip.create!(title: 'Just experiment!',
+                    body:  "The great thing about writing software is that it's easy to try things out and change them before submitting it for a production deployment.  I've found that taking a break and coming back to a difficult programming problem really helps too.",
+                    user:  linda)
+
+Comment.create!(body: "Didn't know that.",
+                user: linda,
+                tip:  tip_1)
+Comment.create!(body: "Clearly more readable!",
+                user: florian,
+                tip:  tip_1)
+Comment.create!(body: 'I like this one!',
+                user: sara,
+                tip:  tip_2)
+Comment.create!(body: "That's so true.",
+                user: florian,
+                tip:  tip_2)
