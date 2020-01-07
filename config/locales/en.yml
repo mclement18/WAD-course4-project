@@ -45,6 +45,10 @@ en:
     placeholder: 'e.g. Ruby classes'
     button: 'Search'
   tips:
+    index:
+      title_1: 'Tips'
+      title_2: 'Tips matching'
+      no_match_found: 'No tips found matching'
     new:
       title: 'New Tip'
     edit:
