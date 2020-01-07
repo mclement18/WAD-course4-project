@@ -5,7 +5,11 @@
         <h1>Pro Tips</h1>
       <% end %>
       <div class="collapse navbar-collapse d-flex justify-content-end">
-        <%= render partial: 'anonymous_user_header' %>
+        <% case current_user_role
+           when 'anonymous' %><%= render partial: 'anonymous_user_header' %>
+        <% when 'registered' %><%= render partial: 'registered_user_header' %>
+        <% when 'admin' %><%= render partial: 'admin_user_header' %>
+        <% end %>
       </div>
     </div>
   </nav>

@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
+  helper_method :current_user, :logged_in?
+
   def logged_in?
     session[:user_id].present?
   end
