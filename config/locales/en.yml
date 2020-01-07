@@ -30,6 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  lang_select: 'Select language'
   links:
     signup: 'Sign up'
     login: 'Log in'
