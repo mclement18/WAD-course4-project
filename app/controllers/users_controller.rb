@@ -33,7 +33,7 @@ class UsersController < ApplicationController
 
   def update
     respond_to do |format|
-      if @user.update(user_params)
+      if @user.update(user_update_params)
         # In this format call, the flash message is being passed directly to
         # redirect_to().  It's a caonvenient way of setting a flash notice or
         # alert without referencing the flash Hash explicitly.
@@ -61,4 +61,7 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:email, :name, :avatar_url, :password)
     end
+
+    def user_update_params
+      params.require(:user).permit(:email, :name, :avatar_url)
 end
