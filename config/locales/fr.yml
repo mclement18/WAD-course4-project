@@ -16,7 +16,7 @@ fr:
   home:
     title: 'Partagez vos conseils en programmation avec les autres developeurs en ligne!'
     subtitle: '... ou trouvez des conseils:'
-    secondtitle: 'Voici les quatre conseils les plus récemment modifié:'
+    secondtitle: 'Voici les quatre conseils les plus récemment modifiés:'
   search:
     label: 'Mots-clefs'
     placeholder: 'e.g. Ruby classes'
@@ -25,7 +25,7 @@ fr:
     index:
       title_1: 'Conseils'
       title_2: 'Conseils correspondant à'
-      no_match_found: 'Aucun conseil trouver correspondant à la recherche'
+      no_match_found: 'Aucun conseil trouvé correspondant à la recherche'
     show:
       created_by: 'Créé par'
       'on': 'le'
