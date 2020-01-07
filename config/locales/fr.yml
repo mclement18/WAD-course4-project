@@ -1,0 +1,83 @@
+fr:
+  lang_select: 'Choisir la langue'
+  tip: 'conseil'
+  comment: 'commentaire'
+  links:
+    signup: "S'inscrire"
+    login: 'Connexion'
+    logout: 'Deconnexion'
+    cancel: 'Annuler'
+    account: 'Compte'
+    users: 'Utilisateurs'
+    tips: 'Conseils'
+    edit: 'Modifier'
+    delete: 'Supprimer'
+    new_tip: 'Nouveau conseil'
+  home:
+    title: 'Partagez vos conseils en programmation avec les autres developeurs en ligne!'
+    subtitle: '... ou trouvez des conseils:'
+    secondtitle: 'Voici les quatre conseils les plus récemment modifié:'
+  search:
+    label: 'Mots-clefs'
+    placeholder: 'e.g. Ruby classes'
+    button: 'Rechercher'
+  tips:
+    index:
+      title_1: 'Conseils'
+      title_2: 'Conseils correspondant à'
+      no_match_found: 'Aucun conseil trouver correspondant à la recherche'
+    show:
+      created_by: 'Créé par'
+      'on': 'le'
+    new:
+      title: 'Nouveau conseil'
+    edit:
+      title: 'Modifier conseil'
+  tip_card:
+    posted_by: 'Publié par'
+    on_this_tip: 'sur ce conseil'
+    edit: 'Modifier conseil'
+    show: 'Détails'
+  comments:
+    title: 'Commentaires'
+    added_by: 'Ajouté par'
+    add_comment: 'Ajoutez votre commentaire'
+    post: 'Publier commentaire'
+  users:
+    index:
+      title: 'Tous les utilisateurs'
+    new:
+      title: "S'inscrire"
+    edit:
+      title: 'Modifier le profil utilisateur'
+  user_card:
+    most_recent_tip: 'Conseil le plus récent'
+    has_created: 'A créé'
+    and_made: 'et fait'
+    member_since: 'Est membre de Pro Tip depuis'
+  account:
+    edit:
+      title: 'Actualiser votre compte'
+    tips:
+      title: 'Vos conseils'
+  sessions:
+    new:
+      title: 'Connexion'
+  helpers:
+    label:
+      tip:
+        title: 'Titre'
+        body: 'Corps'
+        user: 'Utilisateur'
+      user:
+        email: 'Email'
+        name: 'Nom'
+        avatar_url: 'Avatar URL'
+        password: 'Mot de passe'
+    submit:
+      tip:
+        create: 'Créer Conseil'
+        update: 'Actualiser Conseil'
+      user:
+        create: "S'inscrire"
+        update: 'Actualiser'
