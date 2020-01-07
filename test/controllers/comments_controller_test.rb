@@ -4,6 +4,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @tip = tips(:one)
     @comment = comments(:one)
+    app.default_url_options[:locale] = :en
   end
 
   test "should create comment" do

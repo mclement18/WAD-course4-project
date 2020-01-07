@@ -2,6 +2,7 @@ require 'test_helper'
 
 class TipsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    app.default_url_options[:locale] = :en
     @tip = tips(:one)
   end
 
