@@ -82,6 +82,9 @@ en:
       title: 'Update your account'
     tips:
       title: 'Your tips'
+  sessions:
+    new:
+      title: 'Log in'
   helpers:
     label:
       tip:
