@@ -56,6 +56,9 @@ en:
       title_1: 'Tips'
       title_2: 'Tips matching'
       no_match_found: 'No tips found matching'
+    show:
+      created_by: 'Created by'
+      'on': 'on'
     new:
       title: 'New Tip'
     edit:
@@ -65,6 +68,11 @@ en:
     on_this_tip: 'on this tip'
     edit: 'Edit tip'
     show: 'Show more'
+  comments:
+    title: 'Comments'
+    added_by: 'Added by'
+    add_comment: 'Add your own comment'
+    post: 'Post comment'
   users:
     index:
       title: 'All users'
