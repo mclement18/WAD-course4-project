@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   
   scope '/:locale' do
     get 'sessions/new'
+
+    get 'login', to: 'sessions#new'
+    delete 'logout', to: 'sessions#destroy'
+    get 'signup', to: 'users#new'
   
     root to: 'home#index'
   
