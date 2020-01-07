@@ -17,5 +17,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    session.delete(:user_id)
+    respond_to do |format|
+      format.html { redirect_to root_url, notice: 'Successfully logged out!' }
+    end
   end
 end
