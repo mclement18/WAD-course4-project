@@ -59,10 +59,17 @@ en:
     edit: 'Edit tip'
     show: 'Show more'
   users:
+    index:
+      title: 'All users'
     new:
       title: 'Sign up'
     edit:
       title: 'Edit User details'
+  user_card:
+    most_recent_tip: 'Most recent tip'
+    has_created: 'Has created'
+    and_made: 'and made'
+    member_since: 'Has been member of Pro Tips for'
   helpers:
     label:
       tip:
