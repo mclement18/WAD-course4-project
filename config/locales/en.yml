@@ -33,6 +33,9 @@ en:
   signup: 'Sign up'
   login: 'Log in'
   cancel: 'Cancel'
+  edit: 'Edit'
+  delete: 'Delete'
+  comment: 'comment'
   home:
     title: 'Share your programming tips with other developers online!'
     subtitle: '... or find tips about something:'
@@ -46,6 +49,11 @@ en:
       title: 'New Tip'
     edit:
       title: 'Editing Tip'
+  tip_card:
+    posted_by: 'Posted by'
+    on_this_tip: 'on this tip'
+    edit: 'Edit tip'
+    show: 'Show more'
   users:
     new:
       title: 'Sign up'
