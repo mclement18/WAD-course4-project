@@ -29,9 +29,9 @@ module ApplicationHelper
   def pluralize_tips(tips)
     tips_nb = tips.count
     if tips_nb == 0 || tips_nb == 1
-      "#{tips_nb} tip"
+      "#{tips_nb} #{translate('tip')}"
     else
-      "#{tips_nb} tips"
+      "#{tips_nb} #{Inflector.pluralize(translate('tip'))}"
     end
   end
 end

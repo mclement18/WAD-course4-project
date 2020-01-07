@@ -31,6 +31,8 @@
 
 en:
   lang_select: 'Select language'
+  tip: 'tip'
+  comment: 'comment'
   links:
     signup: 'Sign up'
     login: 'Log in'
@@ -42,7 +44,6 @@ en:
     edit: 'Edit'
     delete: 'Delete'
     new_tip: 'New tip'
-  comment: 'comment'
   home:
     title: 'Share your programming tips with other developers online!'
     subtitle: '... or find tips about something:'
