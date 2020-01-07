@@ -23,6 +23,7 @@ class UsersController < ApplicationController
         # In this format call, the flash message is being passed directly to
         # redirect_to().  It's a caonvenient way of setting a flash notice or
         # alert without referencing the flash Hash explicitly.
+        session[:user_id] = @user.id
         format.html { redirect_to @user, notice: 'User was successfully created.' }
       else
         format.html { render :new }
