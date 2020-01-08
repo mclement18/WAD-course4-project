@@ -4,7 +4,9 @@
     <div class="card-body">
       <p><%= translate 'tip_card.posted_by' %> <%= render partial: 'user_link', locals: { user: tip.user } %></p>
       <p><%= pluralize_comments(tip.comments) %> <%= translate 'tip_card.on_this_tip' %>.</p>
-      <%= link_to translate('tip_card.edit'), edit_tip_path(tip), class: 'btn btn-outline-secondary', role: 'button' %>
+      <% if logged_in? && can_edit?(tip) %>
+        <%= link_to translate('tip_card.edit'), edit_tip_path(tip), class: 'btn btn-outline-secondary', role: 'button' %>
+      <% end %>
       <%= link_to translate('tip_card.show'), tip_path(tip), class: 'btn btn-outline-primary', role: 'button' %>
     </div>
   </div>
