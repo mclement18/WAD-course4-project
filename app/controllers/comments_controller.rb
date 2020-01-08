@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_action :ensure_authenticated
   before_action :set_tip
 
   def create

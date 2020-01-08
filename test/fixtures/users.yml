@@ -4,8 +4,10 @@ one:
   email: one@extensionschool.ch
   name: User One
   password_digest: <%= BCrypt::Password.create('testpassword') %>
+  role: 'admin'
 
 two:
   email: two@extensionschool.ch
   name: User Two
   password_digest: <%= BCrypt::Password.create('testpassword') %>
+  role: 'registered'

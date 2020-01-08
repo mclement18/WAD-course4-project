@@ -7,6 +7,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
+    sign_in_as 'one@extensionschool.ch'
+
     get users_url
     assert_response :success
   end
@@ -30,16 +32,22 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get edit" do
+    sign_in_as 'one@extensionschool.ch'
+
     get edit_user_url(@user)
     assert_response :success
   end
 
   test "should update user" do
+    sign_in_as 'one@extensionschool.ch'
+
     patch user_url(@user), params: { user: { avatar_url: @user.avatar_url, email: @user.email, name: @user.name } }
     assert_redirected_to user_url(@user)
   end
 
   test "should destroy user" do
+    sign_in_as 'one@extensionschool.ch'
+
     assert_difference('User.count', -1) do
       delete user_url(@user)
     end

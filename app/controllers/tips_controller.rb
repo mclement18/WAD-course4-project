@@ -1,5 +1,9 @@
 class TipsController < ApplicationController
-  before_action :set_tip, only: [:show, :edit, :update, :destroy]
+  include RolesHelper
+  
+  before_action :ensure_authenticated,  only: [:new, :edit, :create, :update, :destroy]
+  before_action :set_tip,               only: [:show, :edit, :update, :destroy]
+  before_action :authorize_to_edit_tip, only: [:edit, :update, :destroy]
 
   def index
     @tips = Tip.search(params[:q]).page(params[:page]).per(8)
@@ -57,6 +61,10 @@ class TipsController < ApplicationController
 
     def set_tip
       @tip = Tip.find(params[:id])
+    end
+
+    def authorize_to_edit_tip
+      redirect_to account_tips_path unless can_edit?(@tip)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
