@@ -15,7 +15,7 @@ By defining the String in %Q, a String can span several lines.
 This is just basic "newline" markers and won't convert to new lines in HTML, which needs the use
 of <br /> or more appropriate markup.)
 
-
+admin   = User.create!(email: 'admin@protip.ch',            name: 'Admin',   password: 'password', role: 'admin')
 florian = User.create!(email: 'florian@extensionschool.ch', name: 'Florian', password: 'password')
 sara    = User.create!(email: 'sara@extensionschool.ch',    name: 'Sara',    password: 'password')
 linda   = User.create!(email: 'linda@extensionschool.ch',   name: 'Linda',   password: 'password')
