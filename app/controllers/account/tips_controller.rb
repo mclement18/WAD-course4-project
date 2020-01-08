@@ -12,7 +12,7 @@ module Account
     before_action :ensure_authenticated
     
     def index
-      @tips = Tip.all.order(updated_at: :desc)
+      @tips = current_user.tips.page(params[:page]).per(6)
     end
   end
 end
