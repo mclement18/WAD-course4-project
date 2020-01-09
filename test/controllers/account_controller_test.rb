@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AccountControllerTest<ActionDispatch::IntegrationTest
+class AccountControllerTest < ActionDispatch::IntegrationTest
   setup do
     app.default_url_options[:locale] = :en
     @user = users(:one)
