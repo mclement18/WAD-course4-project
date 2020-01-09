@@ -29,7 +29,7 @@
         <blockquote class="blockquote">
           <p class="mb-0"><%= comment.body %></p>
           <footer class="blockquote-footer">
-            <%= translate 'comments.added_by' %> <%= render partial: 'user_link', locals: { user: comment.user } %> on <%= comment.created_at %></footer>
+            <%= translate 'comments.added_by' %> <%= render partial: 'user_link', locals: { user: comment.user } %> <%= translate 'comments.date', time: time_ago_in_words(comment.created_at) %></footer>
         </blockquote>
       <% end %>
     </div>

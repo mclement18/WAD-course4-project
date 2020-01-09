@@ -72,6 +72,7 @@ en:
   comments:
     title: 'Comments'
     added_by: 'Added by'
+    date: "%{time} ago"
     add_comment: 'Add your own comment'
     post: 'Post comment'
   users:
