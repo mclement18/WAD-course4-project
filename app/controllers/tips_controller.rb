@@ -21,7 +21,7 @@ class TipsController < ApplicationController
 
   def create
     @tip = Tip.new(tip_params)
-
+    @tip.user = current_user
     respond_to do |format|
       if @tip.save
         # In this format call, the flash message is being passed directly to
@@ -69,6 +69,6 @@ class TipsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tip_params
-      params.require(:tip).permit(:title, :body, :user_id)
+      params.require(:tip).permit(:title, :body)
     end
 end

@@ -22,7 +22,7 @@ class TipsControllerTest < ActionDispatch::IntegrationTest
     sign_in_as('two@extensionschool.ch')
     
     assert_difference('Tip.count') do
-      post tips_url, params: { tip: { body: @tip.body, title: @tip.title, user_id: @tip.user_id } }
+      post tips_url, params: { tip: { body: @tip.body, title: @tip.title } }
     end
 
     assert_redirected_to tip_url(Tip.last)
