@@ -1,0 +1,9 @@
+Add translation for error and notice messages (+ styling?)
+
+Add translation for pagination
+
+Add role in users#edit and #update
+
+Add an info saying you have no tips in account/tips#index
+
+Implement the favourites resources
