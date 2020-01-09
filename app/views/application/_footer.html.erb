@@ -5,7 +5,7 @@
     </div>
     <div>
       <nav class="nav">
-        <p class="nav-link disabled pl-0"><%= translate 'lang_select' %>:</p>
+        <p class="nav-link disabled pl-0"><%= t('lang_select') %>:</p>
         <% I18n.available_locales.each do |locale| %>
           <%= link_to(locale, url_for(locale: locale), class: 'nav-link') %>
         <% end %>

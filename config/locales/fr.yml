@@ -14,9 +14,10 @@ fr:
     delete: 'Supprimer'
     new_tip: 'Nouveau conseil'
   home:
-    title: 'Partagez vos conseils en programmation avec les autres developeurs en ligne!'
-    subtitle: '... ou trouvez des conseils:'
-    secondtitle: 'Voici les quatre conseils les plus récemment modifiés:'
+    index:
+      title: 'Partagez vos conseils en programmation avec les autres developeurs en ligne!'
+      subtitle: '... ou trouvez des conseils:'
+      secondtitle: 'Voici les quatre conseils les plus récemment modifiés:'
   search:
     label: 'Mots-clefs'
     placeholder: 'e.g. Ruby classes'
@@ -29,6 +30,7 @@ fr:
     show:
       created_by: 'Créé par'
       'on': 'le'
+      at: 'à'
     new:
       title: 'Nouveau conseil'
     edit:
@@ -60,7 +62,8 @@ fr:
     edit:
       title: 'Actualiser votre compte'
     tips:
-      title: 'Vos conseils'
+      index:
+        title: 'Vos conseils'
   sessions:
     new:
       title: 'Connexion'

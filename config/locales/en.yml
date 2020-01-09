@@ -45,9 +45,10 @@ en:
     delete: 'Delete'
     new_tip: 'New tip'
   home:
-    title: 'Share your programming tips with other developers online!'
-    subtitle: '... or find tips about something:'
-    secondtitle: 'Here are the four most recently active tips:'
+    index:
+      title: 'Share your programming tips with other developers online!'
+      subtitle: '... or find tips about something:'
+      secondtitle: 'Here are the four most recently active tips:'
   search:
     label: 'Search term'
     placeholder: 'e.g. Ruby classes'
@@ -60,6 +61,7 @@ en:
     show:
       created_by: 'Created by'
       'on': 'on'
+      at: 'at'
     new:
       title: 'New Tip'
     edit:
@@ -91,7 +93,8 @@ en:
     edit:
       title: 'Update your account'
     tips:
-      title: 'Your tips'
+      index:
+        title: 'Your tips'
   sessions:
     new:
       title: 'Log in'

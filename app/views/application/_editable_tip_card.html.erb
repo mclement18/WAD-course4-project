@@ -2,18 +2,18 @@
   <div class="card">
     <h4 class="card-header"><%= tip.title %></h4>
     <div class="card-body">
-      <p><%= pluralize_comments tip.comments %> <%= translate 'tip_card.on_this_tip' %>.</p>
+      <p><%= pluralize_comments tip.comments %> <%= t('tip_card.on_this_tip') %>.</p>
       <div class="row">
         <div class="col-md-12">
-          <%= link_to translate('tip_card.show'), tip_path(tip), class: 'btn btn-outline-primary btn-block', role: 'button' %>
+          <%= link_to t('tip_card.show'), tip_path(tip), class: 'btn btn-outline-primary btn-block', role: 'button' %>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 mt-2">
-          <%= link_to translate('links.delete'), tip_path(tip), class: 'btn btn-outline-danger btn-block', role: 'button' %>
+          <%= link_to t('links.delete'), tip_path(tip), class: 'btn btn-outline-danger btn-block', role: 'button' %>
         </div>
         <div class="col-md-6 mt-2">
-          <%= link_to translate('links.edit'), edit_tip_path(tip), class: 'btn btn-primary btn-block', role: 'button' %>
+          <%= link_to t('links.edit'), edit_tip_path(tip), class: 'btn btn-primary btn-block', role: 'button' %>
         </div>
       </div>
     </div>

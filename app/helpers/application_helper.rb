@@ -20,18 +20,18 @@ module ApplicationHelper
   def pluralize_comments(comments)
     comments_nb = comments.count
     if comments_nb == 0 || comments_nb == 1
-      "#{comments_nb} #{translate('comment')}"
+      "#{comments_nb} #{t('comment')}"
     else
-      "#{comments_nb} #{Inflector.pluralize(translate('comment'))}"
+      "#{comments_nb} #{Inflector.pluralize(t('comment'))}"
     end
   end
 
   def pluralize_tips(tips)
     tips_nb = tips.count
     if tips_nb == 0 || tips_nb == 1
-      "#{tips_nb} #{translate('tip')}"
+      "#{tips_nb} #{t('tip')}"
     else
-      "#{tips_nb} #{Inflector.pluralize(translate('tip'))}"
+      "#{tips_nb} #{Inflector.pluralize(t('tip'))}"
     end
   end
 end

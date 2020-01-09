@@ -3,8 +3,8 @@
     <h3 class="mr-3"><%= user.name %></h3>
     <% if logged_in? && can_edit?(user) %>
       <div>
-        <%= link_to translate('links.edit'), edit_user_path(user), class: 'btn btn-outline-secondary mr-3' %>
-        <%= link_to translate('links.delete'), user_path(user), class: 'btn btn-outline-danger mr-3' %>
+        <%= link_to t('links.edit'), edit_user_path(user), class: 'btn btn-outline-secondary mr-3' %>
+        <%= link_to t('links.delete'), user_path(user), class: 'btn btn-outline-danger mr-3' %>
       </div>
     <% end %>
   </div>
@@ -15,9 +15,9 @@
   <% end %>
   <div class="card-body">
     <% if user.tips.any? %>
-      <p><%= translate 'user_card.most_recent_tip' %>: <%= link_to user.tips.last.title, tip_path(user.tips.last) %></p>
+      <p><%= t('user_card.most_recent_tip') %>: <%= link_to user.tips.last.title, tip_path(user.tips.last) %></p>
     <% end %>
-    <p><%= translate 'user_card.has_created' %> <%= pluralize_tips user.tips %> <%= translate 'user_card.and_made' %> <%= pluralize_comments user.comments %></p>
-    <p class="text-muted"><%= translate 'user_card.member_since' %> <%= time_ago_in_words(user.created_at) %></p>
+    <p><%= t('user_card.has_created') %> <%= pluralize_tips user.tips %> <%= t('user_card.and_made') %> <%= pluralize_comments user.comments %></p>
+    <p class="text-muted"><%= t('user_card.member_since') %> <%= time_ago_in_words(user.created_at) %></p>
   </div>
 </div>

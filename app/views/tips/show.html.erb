@@ -12,29 +12,29 @@
     <h3><%= @tip.title %></h3>
     <% if logged_in? && can_edit?(@tip) %>
       <div>
-        <%= link_to translate('links.edit'), edit_tip_path(@tip), class: 'btn btn-outline-secondary ml-3' %>
+        <%= link_to t('links.edit'), edit_tip_path(@tip), class: 'btn btn-outline-secondary ml-3' %>
       </div>
     <% end %>
   </div>
 
   <div class="card-body">
     <p><%= @tip.body %></p>
-    <p class="text-muted"><%= translate 'tips.show.created_by' %> <%= render partial: 'user_link', locals: { user: @tip.user } %> <%= translate 'tips.show.on' %> <%= @tip.created_at.strftime('%e %b %Y at %H:%M') %></p>
+    <p class="text-muted"><%= t('.created_by') %> <%= render partial: 'user_link', locals: { user: @tip.user } %> <%= t('.on') %> <%= @tip.created_at.strftime("%e %b %Y #{t('.at')} %H:%M") %></p>
   </div>
 
   <div class="card-body">
-    <h3><%= translate 'comments.title' %></h3>
+    <h3><%= t('comments.title') %></h3>
     <div class="m-3">
       <% @tip.comments.order(created_at: :asc).each do |comment| %>
         <blockquote class="blockquote">
           <p class="mb-0"><%= comment.body %></p>
           <footer class="blockquote-footer">
-            <%= translate 'comments.added_by' %> <%= render partial: 'user_link', locals: { user: comment.user } %> <%= translate 'comments.date', time: time_ago_in_words(comment.created_at) %></footer>
+            <%= t('comments.added_by') %> <%= render partial: 'user_link', locals: { user: comment.user } %> <%= t('comments.date', time: time_ago_in_words(comment.created_at) ) %></footer>
         </blockquote>
       <% end %>
     </div>
     <% if logged_in? %>
-      <p class="text-muted"><%= translate 'comments.add_comment' %></p>
+      <p class="text-muted"><%= t('comments.add_comment') %></p>
       <%=
         # Notice how #build is used here to instantiate a new empty Comment to be
         # used in the form.  #build is a convenient way to create an empty
@@ -46,7 +46,7 @@
           <%= form.text_area(:body, class: 'form-control mb-2', rows: 5) %>
         </fieldset>
         <fieldset class="d-flex justify-content-end">
-          <%= form.submit translate('comments.post'), class: 'btn btn-primary' %>
+          <%= form.submit t('comments.post'), class: 'btn btn-primary' %>
         </fieldset>
       <% end %>
     <% end %>
