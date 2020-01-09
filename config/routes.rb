@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     root to: 'home#index'
   
     get  '/account', to: 'account#edit'
-    post '/account', to: 'account#update'
+    patch '/account', to: 'account#update'
   
     namespace :account do
       resources :tips, only: [:index]
