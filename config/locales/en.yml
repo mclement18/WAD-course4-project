@@ -110,6 +110,7 @@ en:
         name: 'Name'
         avatar_url: 'Avatar URL'
         password: 'Password'
+        role: 'Role'
     submit:
       tip:
         create: 'Create Tip'

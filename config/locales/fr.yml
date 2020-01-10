@@ -79,6 +79,7 @@ fr:
         name: 'Nom'
         avatar_url: 'Avatar URL'
         password: 'Mot de passe'
+        role: 'Rôle'
     submit:
       tip:
         create: 'Créer Conseil'
