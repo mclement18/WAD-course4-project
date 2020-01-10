@@ -12,6 +12,8 @@ class User < ApplicationRecord
 
   after_initialize :default_role!
   before_validation :downcase_email
+
+  mount_uploader :avatar, AvatarUploader
   
   private
 
