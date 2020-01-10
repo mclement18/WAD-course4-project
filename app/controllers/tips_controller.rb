@@ -54,6 +54,7 @@ class TipsController < ApplicationController
       # redirect_to().  It's a caonvenient way of setting a flash notice or
       # alert without referencing the flash Hash explicitly.
       format.html { redirect_to tips_url, notice: 'Tip was successfully destroyed.' }
+      format.js
     end
   end
 
