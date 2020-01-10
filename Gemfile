@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use Kaminari for pagination
 gem 'kaminari'
+
+# Use CarrierWave for file upload
+gem 'carrierwave', '~> 2.0'
