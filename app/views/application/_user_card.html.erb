@@ -8,11 +8,7 @@
       </div>
     <% end %>
   </div>
-  <% if user.avatar_url.present? %>
-    <%= image_tag user.avatar_url, class: 'card-img-top', alt: "Avatar for #{user.name}" %>
-  <% else %>
-    <%= image_tag default_avatar(user), class: 'card-img-top', alt: "Avatar for #{user.name}" %>
-  <% end %>
+  <%= image_tag user.avatar_url, class: 'card-img-top', alt: "Avatar for #{user.name}" %>
   <div class="card-body">
     <% if user.tips.any? %>
       <p><%= t('user_card.most_recent_tip') %>: <%= link_to user.tips.last.title, tip_path(user.tips.last) %></p>
