@@ -1,0 +1,4 @@
+document.getElementById('user-<%= @user.id %>').parentElement.remove();
+
+const notice = document.createTextNode('User was successfully destroyed.');
+document.getElementById('notice').appendChild(notice);

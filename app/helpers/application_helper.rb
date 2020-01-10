@@ -34,4 +34,8 @@ module ApplicationHelper
       "#{tips_nb} #{Inflector.pluralize(t('tip'))}"
     end
   end
+
+  def is_this_users_index?
+    request.fullpath == users_path
+  end
 end
