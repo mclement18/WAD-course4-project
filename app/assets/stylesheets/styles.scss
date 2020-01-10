@@ -17,6 +17,12 @@
   line-height: 1.2;
 }
 
+img.avatar {
+  @extend .mr-1;
+  height: 75px;
+  border-radius: 15px;
+}
+
 img.avatar-xs {
   @extend .mr-1;
   height: 30px;

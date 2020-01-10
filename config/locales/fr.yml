@@ -77,7 +77,7 @@ fr:
       user:
         email: 'Email'
         name: 'Nom'
-        avatar_url: 'Avatar URL'
+        avatar: 'Avatar'
         password: 'Mot de passe'
         role: 'Rôle'
     submit:

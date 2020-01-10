@@ -108,7 +108,7 @@ en:
       user:
         email: 'Email'
         name: 'Name'
-        avatar_url: 'Avatar URL'
+        avatar: 'Avatar'
         password: 'Password'
         role: 'Role'
     submit:

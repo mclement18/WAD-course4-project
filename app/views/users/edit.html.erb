@@ -1,5 +1,8 @@
 <div class="row mt-4 mb-4">
-  <h1 class="col-12 text-center display-4"><%= t('.title') %></h1>
+  <h1 class="col-12 text-center display-4">
+    <%= t('.title') %>
+    <%= image_tag @user.avatar_url, class: 'avatar', alt: "Avatar for #{@user.name}" %>
+  </h1>
 </div>
 <div class="row">
   <%= form_for(@user, html: { class: 'col-lg-10 offset-lg-1' }) do |form| %>
@@ -22,9 +25,9 @@
     </fieldset>
 
     <fieldset class="form-group row">
-      <%= form.label :avatar_url, class: 'col-md-2 col-form-label' %>
+      <%= form.label :avatar, class: 'col-md-2 col-form-label' %>
       <div class="col-md-10">
-        <%= form.text_field :avatar_url, class: 'form-control' %>
+        <%= form.file_field :avatar, class: 'form-control' %>
       </div>
     </fieldset>
 
