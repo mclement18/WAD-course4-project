@@ -64,6 +64,7 @@ fr:
     tips:
       index:
         title: 'Vos conseils'
+        no_tips: "Vous n'avez pas de conseil. Pour créer un conseil, cliquez sur le bouton 'Nouveau conseil' au-dessus!"
   sessions:
     new:
       title: 'Connexion'

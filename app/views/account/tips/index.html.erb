@@ -15,8 +15,12 @@
   <%= link_to t('links.new_tip'), new_tip_path, class: 'btn btn-outline-primary', role: 'button' %>
 </div>
 <div class="row">
-<% @tips.each do |tip| %>
-  <%= render partial: 'editable_tip_card', locals: { tip: tip } %>
+<% if @tips.any? %>
+  <% @tips.each do |tip| %>
+    <%= render partial: 'editable_tip_card', locals: { tip: tip } %>
+  <% end %>
+<% else %>
+  <p class="no-results mt-5 mb-5"><%= t('.no_tips') %></p>
 <% end %>
 </div>
 <%= paginate @tips %>

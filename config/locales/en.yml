@@ -95,6 +95,7 @@ en:
     tips:
       index:
         title: 'Your tips'
+        no_tips: "You have no tips. To create a tip, click on 'New tip' button above!"
   sessions:
     new:
       title: 'Log in'
