@@ -1,0 +1,52 @@
+const comment = {
+  body: '<%= @comment.body %>',
+  user: {
+    name: '<%= @comment.user.name %>',
+    path: '<%= user_path(@comment.user) %>',
+    avatar_url: '<%= @comment.user.avatar_url %>',
+  },
+  text1: '<%= t('comments.added_by') %> ',
+  text2: ' <%= t('comments.date', time: time_ago_in_words(@comment.created_at) ) %>'
+};
+
+const buildUserLink = function(user) {
+  const avatar = document.createElement('img');
+  avatar.src = user.avatar_url;
+  avatar.className = 'avatar-xs';
+
+  const name = document.createTextNode(user.name);
+
+  const link = document.createElement('a');
+  link.appendChild(avatar);
+  link.appendChild(name);
+  link.href = user.path;
+
+  return link;
+};
+
+const buildComment = function(comment) {
+  const text1 = document.createTextNode(comment.text1);
+  const text2 = document.createTextNode(comment.text2);
+  const userLink = buildUserLink(comment.user);
+  
+  const footer = document.createElement('footer');
+  footer.appendChild(text1);
+  footer.appendChild(userLink);
+  footer.appendChild(text2);
+  footer.className = 'blockquote-footer';
+  
+  const body = document.createElement('p');
+  body.className = 'mb-0';
+  body.textContent = comment.body;
+
+  const newComment = document.createElement('blockquote');
+  newComment.appendChild(body);
+  newComment.appendChild(footer);
+  newComment.className = 'blockquote';
+
+  return newComment;
+};
+
+const newComment = buildComment(comment);
+document.getElementById('commentsList').appendChild(newComment);
+document.getElementById('comment_body').value = '';

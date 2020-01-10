@@ -2,4 +2,6 @@ Add translation for error and notice messages (+ styling?)
 
 Add translation for pagination
 
+Add delete tip button in tips#edit view
+
 Implement the favourites resources
