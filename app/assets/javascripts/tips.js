@@ -1,2 +1,8 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+const Tip = {};
+
+Tip.removeFromPage = function(tipId) {
+  document.getElementById('tip-' + tipId).remove();
+  
+  const notice = document.createTextNode('Tip was successfully destroyed.');
+  document.getElementById('notice').appendChild(notice);
+};

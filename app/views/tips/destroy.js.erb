@@ -1,4 +1,1 @@
-document.getElementById('tip-<%= @tip.id %>').remove();
-
-const notice = document.createTextNode('Tip was successfully destroyed.');
-document.getElementById('notice').appendChild(notice);
+Tip.removeFromPage('<%= @tip.id %>');
