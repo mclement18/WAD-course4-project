@@ -53,6 +53,7 @@ fr:
       title: "S'inscrire"
     edit:
       title: 'Modifier le profil utilisateur'
+      delete_tip: 'Supprimer conseil'
   user_card:
     most_recent_tip: 'Conseil le plus récent'
     has_created: 'A créé'

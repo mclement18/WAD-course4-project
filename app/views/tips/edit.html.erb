@@ -1,5 +1,6 @@
 <div class="row mt-4 mb-4">
   <h1 class="col-12 text-center display-4"><%= t('.title') %></h1>
+  <%= link_to t('.delete_tip'), tip_path(@tip), method: :delete, class: 'btn btn-outline-danger', role: 'button' %>
 </div>
 
 <%= render 'form', tip: @tip %>

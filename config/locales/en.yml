@@ -84,6 +84,7 @@ en:
       title: 'Sign up'
     edit:
       title: 'Edit User details'
+      delete_tip: 'Delete tip'
   user_card:
     most_recent_tip: 'Most recent tip'
     has_created: 'Has created'
