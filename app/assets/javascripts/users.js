@@ -1,2 +1,16 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+const User = {};
+
+User.buildLink = function(user) {
+  const avatar = document.createElement('img');
+  avatar.src = user.avatar_url;
+  avatar.className = 'avatar-xs';
+
+  const name = document.createTextNode(user.name);
+
+  const link = document.createElement('a');
+  link.appendChild(avatar);
+  link.appendChild(name);
+  link.href = user.path;
+
+  return link;
+};
