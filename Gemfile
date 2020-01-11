@@ -57,4 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'kaminari'
 
 # Use CarrierWave for file upload
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 1.1.0'
