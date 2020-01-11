@@ -58,3 +58,4 @@ gem 'kaminari'
 
 # Use CarrierWave for file upload
 gem 'carrierwave', '~> 1.1.0'
+gem 'mini_magick'
