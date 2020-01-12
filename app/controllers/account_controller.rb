@@ -7,7 +7,7 @@ class AccountController < ApplicationController
   def update
     respond_to do |format|
       if current_user.update(user_params)
-        format.html { redirect_to account_url, notice: 'Profile successfully updated!' }
+        format.html { redirect_to account_url, notice: t('notices.account_updated') }
       else
         format.html { render :edit }
       end

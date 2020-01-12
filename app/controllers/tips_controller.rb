@@ -27,7 +27,7 @@ class TipsController < ApplicationController
         # In this format call, the flash message is being passed directly to
         # redirect_to().  It's a caonvenient way of setting a flash notice or
         # alert without referencing the flash Hash explicitly.
-        format.html { redirect_to @tip, notice: 'Tip was successfully created.' }
+        format.html { redirect_to @tip, notice: t('notices.tip_created') }
       else
         format.html { render :new }
       end
@@ -40,7 +40,7 @@ class TipsController < ApplicationController
         # In this format call, the flash message is being passed directly to
         # redirect_to().  It's a caonvenient way of setting a flash notice or
         # alert without referencing the flash Hash explicitly.
-        format.html { redirect_to @tip, notice: 'Tip was successfully updated.' }
+        format.html { redirect_to @tip, notice: t('notices.tip_updated') }
       else
         format.html { render :edit }
       end
@@ -53,7 +53,7 @@ class TipsController < ApplicationController
       # In this format call, the flash message is being passed directly to
       # redirect_to().  It's a caonvenient way of setting a flash notice or
       # alert without referencing the flash Hash explicitly.
-      format.html { redirect_to tips_url, notice: 'Tip was successfully destroyed.' }
+      format.html { redirect_to tips_url, notice: t('notices.tip_destroyed') }
       format.js
     end
   end

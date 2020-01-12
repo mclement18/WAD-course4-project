@@ -1,93 +1,98 @@
 fr:
-  lang_select: 'Choisir la langue'
-  tip: 'conseil'
-  comment: 'commentaire'
+  lang_select: Choisir la langue
+  tip: conseil
+  comment: commentaire
   links:
-    signup: "S'inscrire"
-    login: 'Connexion'
-    logout: 'Deconnexion'
-    cancel: 'Annuler'
-    account: 'Compte'
-    users: 'Utilisateurs'
-    tips: 'Conseils'
-    edit: 'Modifier'
-    delete: 'Supprimer'
-    new_tip: 'Nouveau conseil'
+    signup: S'inscrire
+    login: Connexion
+    logout: Deconnexion
+    cancel: Annuler
+    account: Compte
+    users: Utilisateurs
+    tips: Conseils
+    edit: Modifier
+    delete: Supprimer
+    new_tip: Nouveau conseil
   home:
     index:
-      title: 'Partagez vos conseils en programmation avec les autres developeurs en ligne!'
+      title: Partagez vos conseils en programmation avec les autres developeurs en ligne!
       subtitle: '... ou trouvez des conseils:'
       secondtitle: 'Voici les quatre conseils les plus récemment modifiés:'
   search:
-    label: 'Mots-clefs'
-    placeholder: 'e.g. Ruby classes'
-    button: 'Rechercher'
+    label: Mots-clefs
+    placeholder: e.g. Ruby classes
+    button: Rechercher
   tips:
     index:
-      title_1: 'Conseils'
-      title_2: 'Conseils correspondant à'
-      no_match_found: 'Aucun conseil trouvé correspondant à la recherche'
+      title_1: Conseils
+      title_2: Conseils correspondant à
+      no_match_found: Aucun conseil trouvé correspondant à la recherche
     show:
-      created_by: 'Créé par'
-      'on': 'le'
-      at: 'à'
+      created_by: Créé par
+      'on': le
+      at: à
     new:
-      title: 'Nouveau conseil'
+      title: Nouveau conseil
     edit:
-      title: 'Modifier conseil'
+      title: Modifier conseil
+      delete_tip: Supprimer conseil
+    title_field_info: Maximum 100 caractères
   tip_card:
-    posted_by: 'Publié par'
-    on_this_tip: 'sur ce conseil'
-    edit: 'Modifier conseil'
-    show: 'Détails'
+    posted_by: Publié par
+    on_this_tip: sur ce conseil
+    edit: Modifier conseil
+    show: Détails
   comments:
-    title: 'Commentaires'
-    added_by: 'Ajouté par'
+    title: Commentaires
+    added_by: Ajouté par
     date: "il y a %{time}"
-    add_comment: 'Ajoutez votre commentaire'
-    post: 'Publier commentaire'
+    add_comment: Ajoutez votre commentaire
+    post: Publier commentaire
   users:
     index:
-      title: 'Tous les utilisateurs'
+      title: Tous les utilisateurs
     new:
-      title: "S'inscrire"
+      title: S'inscrire
     edit:
-      title: 'Modifier le profil utilisateur'
-      delete_tip: 'Supprimer conseil'
+      title: Modifier le profil utilisateur
+      delete_tip: Supprimer conseil
   user_card:
-    most_recent_tip: 'Conseil le plus récent'
-    has_created: 'A créé'
-    and_made: 'et fait'
-    member_since: 'Est membre de Pro Tip depuis'
+    most_recent_tip: Conseil le plus récent
+    has_created: A créé
+    and_made: et fait
+    member_since: Est membre de Pro Tip depuis
   account:
     edit:
-      title: 'Actualiser votre compte'
+      title: Actualiser votre compte
     tips:
       index:
-        title: 'Vos conseils'
-        no_tips: "Vous n'avez pas de conseil. Pour créer un conseil, cliquez sur le bouton 'Nouveau conseil' au-dessus!"
+        title: Vos conseils
+        no_tips: Vous n'avez pas de conseil. Pour créer un conseil, cliquez sur le bouton "Nouveau conseil" au-dessus!
   sessions:
     new:
-      title: 'Connexion'
+      title: Connexion
+      email: Email
+      password: Mot de passe
   helpers:
-    label:
-      tip:
-        title: 'Titre'
-        body: 'Corps'
-        user: 'Utilisateur'
-      user:
-        email: 'Email'
-        name: 'Nom'
-        avatar: 'Avatar'
-        password: 'Mot de passe'
-        role: 'Rôle'
     submit:
       tip:
-        create: 'Créer Conseil'
-        update: 'Actualiser Conseil'
+        create: Créer Conseil
+        update: Actualiser Conseil
       user:
-        create: "S'inscrire"
-        update: 'Actualiser'
+        create: S'inscrire
+        update: Actualiser
+  activerecord:
+    attributes:
+      tip:
+        title: Titre
+        body: Corps
+        user: Utilisateur
+      user:
+        email: Email
+        name: Nom
+        avatar: Avatar
+        password: Mot de passe
+        role: Rôle
   datetime:
     distance_in_words:
       about_x_hours:
@@ -129,3 +134,53 @@ fr:
       x_seconds:
         one: 1 seconde
         other: "%{count} secondes"
+  errors:
+    error: erreur
+    header: 'a/ont empêché la sauvgarde:'
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: doit être accepté(e)
+      blank: doit être rempli(e)
+      confirmation: ne concorde pas avec %{attribute}
+      empty: doit être rempli(e)
+      equal_to: doit être égal à %{count}
+      even: doit être pair
+      exclusion: n'est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n'est pas inclus(e) dans la liste
+      invalid: n'est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      model_invalid: 'Validation échouée : %{errors}'
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      odd: doit être impair
+      other_than: doit être différent de %{count}
+      present: doit être vide
+      required: doit exister
+      taken: n'est pas disponible
+      too_long:
+        one: est trop long (pas plus d'un caractère)
+        other: est trop long (pas plus de %{count} caractères)
+      too_short:
+        one: est trop court (au moins un caractère)
+        other: est trop court (au moins %{count} caractères)
+      wrong_length:
+        one: ne fait pas la bonne longueur (doit comporter un seul caractère)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères
+  notices:
+    account_updated: Profile mis à jour avec succès!
+    comment_created: Commentaire créé avec succès.
+    login_succes: Connecté avec succès!
+    logout_success: Deconnecté avec succès!
+    tip_created: Conseil créé avec succès.
+    tip_updated: Conseil mis à jour avec succès.
+    tip_destroyed: Conseil supprimé avec succès.
+    user_created: Utilisateur créé avec succès.
+    user_updated: Utilisateur mis à jour avec succès.
+    user_destroyed: Utilisateur supprimé avec succès.
+  alerts:
+    comment_creation_failed: Impossible de créé le commentaire.
+    login_fail: Combination email et mot de passe invalide. Veuillez réessayer.
+    

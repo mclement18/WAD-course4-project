@@ -30,92 +30,114 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  lang_select: 'Select language'
-  tip: 'tip'
-  comment: 'comment'
+  lang_select: Select language
+  tip: tip
+  comment: comment
   links:
-    signup: 'Sign up'
-    login: 'Log in'
-    logout: 'Log out'
-    cancel: 'Cancel'
-    account: 'Account'
-    users: 'Users'
-    tips: 'Tips'
-    edit: 'Edit'
-    delete: 'Delete'
-    new_tip: 'New tip'
+    signup: Sign up
+    login: Log in
+    logout: Log out
+    cancel: Cancel
+    account: Account
+    users: Users
+    tips: Tips
+    edit: Edit
+    delete: Delete
+    new_tip: New tip
   home:
     index:
-      title: 'Share your programming tips with other developers online!'
+      title: Share your programming tips with other developers online!
       subtitle: '... or find tips about something:'
       secondtitle: 'Here are the four most recently active tips:'
   search:
-    label: 'Search term'
-    placeholder: 'e.g. Ruby classes'
-    button: 'Search'
+    label: Search term
+    placeholder: e.g. Ruby classes
+    button: Search
   tips:
     index:
-      title_1: 'Tips'
-      title_2: 'Tips matching'
-      no_match_found: 'No tips found matching'
+      title_1: Tips
+      title_2: Tips matching
+      no_match_found: No tips found matching
     show:
-      created_by: 'Created by'
+      created_by: Created by
       'on': 'on'
-      at: 'at'
+      at: at
     new:
-      title: 'New Tip'
+      title: New Tip
     edit:
-      title: 'Editing Tip'
+      title: Editing Tip
+      delete_tip: Delete tip
+    title_field_info: Maximum 100 characters
   tip_card:
-    posted_by: 'Posted by'
-    on_this_tip: 'on this tip'
-    edit: 'Edit tip'
-    show: 'Show more'
+    posted_by: Posted by
+    on_this_tip: on this tip
+    edit: Edit tip
+    show: Show more
   comments:
-    title: 'Comments'
-    added_by: 'Added by'
+    title: Comments
+    added_by: Added by
     date: "%{time} ago"
-    add_comment: 'Add your own comment'
-    post: 'Post comment'
+    add_comment: Add your own comment
+    post: Post comment
   users:
     index:
-      title: 'All users'
+      title: All users
     new:
-      title: 'Sign up'
+      title: Sign up
     edit:
-      title: 'Edit User details'
-      delete_tip: 'Delete tip'
+      title: Edit User details
+      delete_tip: Delete tip
   user_card:
-    most_recent_tip: 'Most recent tip'
-    has_created: 'Has created'
-    and_made: 'and made'
-    member_since: 'Has been member of Pro Tips for'
+    most_recent_tip: Most recent tip
+    has_created: Has created
+    and_made: and made
+    member_since: Has been member of Pro Tips for
   account:
     edit:
-      title: 'Update your account'
+      title: Update your account
     tips:
       index:
-        title: 'Your tips'
-        no_tips: "You have no tips. To create a tip, click on 'New tip' button above!"
+        title: Your tips
+        no_tips: You have no tips. To create a tip, click on "New tip" button above!
   sessions:
     new:
-      title: 'Log in'
+      title: Log in
+      email: Email
+      password: Password
   helpers:
-    label:
-      tip:
-        title: 'Title'
-        body: 'Body'
-        user: 'User'
-      user:
-        email: 'Email'
-        name: 'Name'
-        avatar: 'Avatar'
-        password: 'Password'
-        role: 'Role'
     submit:
       tip:
-        create: 'Create Tip'
-        update: 'Update Tip'
+        create: Create Tip
+        update: Update Tip
       user:
-        create: 'Sign up'
-        update: 'Update'
+        create: Sign up
+        update: Update
+  activerecord:
+    attributes:
+      tip:
+        title: Title
+        body: Body
+        user: User
+      user:
+        email: Email
+        name: Name
+        avatar: Avatar
+        password: Password
+        role: Role
+  errors:
+    error: error
+    header: 'prohibited this from being saved:'
+  notices:
+    account_updated: Profile successfully updated!
+    comment_created: Comment was successfully created.
+    login_succes: Successfully logged in!
+    logout_success: Successfully logged out!
+    tip_created: Tip was successfully created.
+    tip_updated: Tip was successfully updated.
+    tip_destroyed: Tip was successfully destroyed.
+    user_created: User was successfully created.
+    user_updated: User was successfully updated.
+    user_destroyed: User was successfully destroyed.
+  alerts:
+    comment_creation_failed: Unable to create comment.
+    login_fail: Invalid email and password combiantion. Please try again.

@@ -25,7 +25,7 @@ class UsersController < ApplicationController
         # redirect_to().  It's a caonvenient way of setting a flash notice or
         # alert without referencing the flash Hash explicitly.
         session[:user_id] = @user.id
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to @user, notice: t('notices.user_created') }
       else
         format.html { render :new }
       end
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
         # In this format call, the flash message is being passed directly to
         # redirect_to().  It's a caonvenient way of setting a flash notice or
         # alert without referencing the flash Hash explicitly.
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to @user, notice: t('notices.user_updated') }
       else
         format.html { render :edit }
       end
@@ -48,7 +48,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to users_url, notice: t('notices.user_destroyed') }
       format.js
     end
   end

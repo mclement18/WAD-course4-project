@@ -8,13 +8,10 @@ class CommentsController < ApplicationController
     @comment.user = current_user
 
     respond_to do |format|
-      # In these format calls, the flash message is being passed directly to
-      # redirect_to().  It's a caonvenient way of setting a flash notice or
-      # alert without referencing the flash Hash explicitly.
       if @comment.save
-        flash[:notice] = 'Comment was successfully created.'
+        flash[:notice] = t('notices.comment_created')
       else
-        flash[:alert] = 'Unable to create comment.'
+        flash[:alert] = t('alerts.comment_creation_failed')
       end
       format.js
     end
