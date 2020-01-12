@@ -1,6 +1,6 @@
 <div class="col-md-6 offset-md-3">
   <h1 class="text-center display-4 m-5"><%= t('.title') %></h1>
-  <%= form_for(@user) do |form| %>
+  <%= form_for(@user, url: signup_path) do |form| %>
     <% if @user.errors.any? %>
       <%= render partial: 'model_errors', locals: { model: @user } %>
     <% end %>

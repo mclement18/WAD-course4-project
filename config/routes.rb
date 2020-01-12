@@ -2,13 +2,12 @@ Rails.application.routes.draw do
   root to: 'home#index'
   
   scope '/:locale' do
-    get 'sessions/new'
-
+    root to: 'home#index'
+    
     get 'login', to: 'sessions#new'
     delete 'logout', to: 'sessions#destroy'
     get 'signup', to: 'users#new'
-  
-    root to: 'home#index'
+    post 'signup', to: 'users#create'
   
     get  '/account', to: 'account#edit'
     patch '/account', to: 'account#update'
