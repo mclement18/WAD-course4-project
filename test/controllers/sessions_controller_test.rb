@@ -6,7 +6,12 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   end
   
   test "should get new" do
-    get sessions_new_url
+    get new_session_url
+    assert_response :success
+  end
+
+  test "should get new via login_path" do
+    get login_url
     assert_response :success
   end
 
@@ -19,6 +24,13 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   test "should destroy session" do
     sign_in_as 'two@extensionschool.ch'
     delete session_url(1)
+    assert_redirected_to root_url
+    refute session[:user_id].present?
+  end
+
+  test "should destroy session via logout_path" do
+    sign_in_as 'two@extensionschool.ch'
+    delete logout_url
     assert_redirected_to root_url
     refute session[:user_id].present?
   end

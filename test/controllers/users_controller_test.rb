@@ -18,9 +18,22 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get new via signup" do
+    get signup_url
+    assert_response :success
+  end
+
   test "should create user" do
     assert_difference('User.count') do
       post users_url, params: { user: { avatar_url: @user.avatar_url, email: 'new@epfl.ch', name: @user.name, password: 'password' } }
+    end
+
+    assert_redirected_to user_url(User.last)
+  end
+
+  test "should create user via signup" do
+    assert_difference('User.count') do
+      post signup_url, params: { user: { avatar_url: @user.avatar_url, email: 'new@epfl.ch', name: @user.name, password: 'password' } }
     end
 
     assert_redirected_to user_url(User.last)
