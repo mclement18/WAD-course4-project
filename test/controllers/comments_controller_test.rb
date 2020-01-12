@@ -10,9 +10,9 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create comment" do
     assert_difference('Comment.count') do
-      post tip_comments_url(@tip), params: { comment: { body: @comment.body } }
+      post tip_comments_url(@tip), params: { comment: { body: @comment.body } }, xhr: true
     end
 
-    assert_redirected_to tip_url(Comment.last.tip)
+    assert_response :success
   end
 end
