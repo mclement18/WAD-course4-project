@@ -49,11 +49,13 @@ class TipsController < ApplicationController
 
   def destroy
     @tip.destroy
+    flash.clear
     respond_to do |format|
       # In this format call, the flash message is being passed directly to
       # redirect_to().  It's a caonvenient way of setting a flash notice or
       # alert without referencing the flash Hash explicitly.
       format.html { redirect_to tips_url, notice: t('notices.tip_destroyed') }
+      flash[:notice] = t('notices.tip_destroyed')
       format.js
     end
   end

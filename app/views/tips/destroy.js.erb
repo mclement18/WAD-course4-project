@@ -1,1 +1,7 @@
 Tip.removeFromPage('<%= @tip.id %>');
+
+<% if flash.any? %>
+  <% flash.each do |name, message| %>
+    Alert.render('<%= message %>', '<%= name %>');
+  <% end %>
+<% end %>
