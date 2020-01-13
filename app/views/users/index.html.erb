@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if alert || notice %>
+  <%= render partial: 'alert_and_notice', locals: { notice: notice, alert: alert } %>
+<% end %>
 
 <h1><%= t('.title') %></h1>
 <div class="row mt-4">

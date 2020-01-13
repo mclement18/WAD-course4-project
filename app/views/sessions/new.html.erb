@@ -1,12 +1,10 @@
+<% if alert || notice %>
+  <%= render partial: 'alert_and_notice', locals: { notice: notice, alert: alert } %>
+<% end %>
+
 <div class="col-md-6 offset-md-3">
   <h1 class="text-center display-4 m-5"><%= t('.title') %></h1>
   <%= form_tag(sessions_path) do %>
-    <% if alert %>
-      <div id="error_explanation">
-        <p><%= alert %></p>
-      </div>
-    <% end %>
-
     <div class="form-group row">
       <%= label :email, t('.email'), class: 'col-sm-2 col-form-label' %>
       <div class="col-sm-10">
