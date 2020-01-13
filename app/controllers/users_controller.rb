@@ -47,10 +47,9 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
-    flash.clear
     respond_to do |format|
       format.html { redirect_to users_url, notice: t('notices.user_destroyed') }
-      flash[:notice] = t('notices.user_destroyed')
+      flash.now.notice = t('notices.user_destroyed')
       format.js
     end
   end

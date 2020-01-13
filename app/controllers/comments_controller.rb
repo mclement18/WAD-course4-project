@@ -8,13 +8,12 @@ class CommentsController < ApplicationController
     @comment.user = current_user
 
     respond_to do |format|
-      flash.clear
       if @comment.save
         @comment_was_saved = true
-        flash[:notice] = t('notices.comment_created')
+        flash.now.notice = t('notices.comment_created')
       else
         @comment_was_saved = false
-        flash[:alert] = t('alerts.comment_creation_failed')
+        flash.now.alert = t('alerts.comment_creation_failed')
       end
       format.js
     end
