@@ -17,7 +17,4 @@ User.buildLink = function(user) {
 
 User.removeFromPage = function(userId) {
   document.getElementById('user-' + userId).parentElement.remove();
-
-  const notice = document.createTextNode('User was successfully destroyed.');
-  document.getElementById('notice').appendChild(notice);
 };
