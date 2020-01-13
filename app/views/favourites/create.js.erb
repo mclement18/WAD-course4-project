@@ -1,0 +1,7 @@
+Favourite.renderButton('<%= @tip.id %>', '<%= user_favourite_path(current_user, @tip) %>', '<%= t('tip_card.remove_favourites') %>', 'remove', '<%= t('tip_card.remove') %>')
+
+<% if flash.any? %>
+  <% flash.each do |name, message| %>
+    Alert.render('<%= message %>', '<%= name %>', '<%= alert_id %>');
+  <% end %>
+<% end %>

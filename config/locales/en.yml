@@ -76,6 +76,7 @@ en:
     show: Show more
     add_favourites: Add to favourites
     remove_favourites: Favourites
+    remove: Remove
   comments:
     title: Comments
     added_by: Added by
@@ -148,6 +149,8 @@ en:
     user_created: User was successfully created.
     user_updated: User was successfully updated.
     user_destroyed: User was successfully destroyed.
+    favourite_added: Tip was successfully added to your favourites.
+    favourite_removed: Tip was successfully removed from your favourites.
   alerts:
     comment_creation_failed: Unable to create comment.
     login_fail: Invalid email and password combiantion. Please try again.

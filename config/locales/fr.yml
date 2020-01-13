@@ -45,6 +45,7 @@ fr:
     show: Détails
     add_favourites: Ajouter aux favoris
     remove_favourites: Favoris
+    remove: Retirer
   comments:
     title: Commentaires
     added_by: Ajouté par
@@ -205,6 +206,8 @@ fr:
     user_created: Utilisateur créé avec succès.
     user_updated: Utilisateur mis à jour avec succès.
     user_destroyed: Utilisateur supprimé avec succès.
+    favourite_added: Conseil ajouté à vos favoris avec succès.
+    favourite_removed: Conseil retiré de vos favoris avec succès.
   alerts:
     comment_creation_failed: Impossible de créé le commentaire.
     login_fail: Combination email et mot de passe invalide. Veuillez réessayer.

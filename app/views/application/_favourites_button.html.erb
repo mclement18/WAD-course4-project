@@ -1,5 +1,5 @@
 <% if favourite?(tip.id) %>
-  <%= link_to t('tip_card.remove_favourites'), user_favourite_path(current_user, tip), id: "remove-favourite-tip-#{tip.id}", class: 'btn btn-success removeFavorites', role: 'button', method: :delete, remote: true %>
+  <%= link_to t('tip_card.remove_favourites'), user_favourite_path(current_user, tip), id: "remove-favourite-tip-#{tip.id}", class: 'btn btn-success removeFavourites', role: 'button', data: { 'text-swap' => t('tip_card.remove') }, method: :delete, remote: true %>
 <% else %>
   <%= form_tag user_favourites_path(current_user), id: "add-favourite-tip-#{tip.id}", style: 'display: inline-block;', remote: true do %>
     <%= hidden_field_tag(:tip_id, tip.id) %>

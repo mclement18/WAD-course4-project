@@ -1,0 +1,11 @@
+if (document.getElementById('thisIsAccountFavouritesIndex')) {
+  Tip.removeFromPage('<%= @tip.id %>', `<%= raw(t('account.favourites.index.no_favourites')) %>`);
+} else {
+  Favourite.renderButton('<%= @tip.id %>', '<%= user_favourites_path(current_user) %>', '<%= t('tip_card.add_favourites') %>', 'add')
+}
+
+<% if flash.any? %>
+  <% flash.each do |name, message| %>
+    Alert.render('<%= message %>', '<%= name %>', '<%= alert_id %>');
+  <% end %>
+<% end %>
