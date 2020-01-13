@@ -10,6 +10,7 @@ fr:
     account: Compte
     users: Utilisateurs
     tips: Conseils
+    favourites: Favoris
     edit: Modifier
     delete: Supprimer
     new_tip: Nouveau conseil
@@ -42,6 +43,8 @@ fr:
     on_this_tip: sur ce conseil
     edit: Modifier conseil
     show: Détails
+    add_favourites: Ajouter aux favoris
+    remove_favourites: Favoris
   comments:
     title: Commentaires
     added_by: Ajouté par
@@ -68,6 +71,10 @@ fr:
       index:
         title: Vos conseils
         no_tips: Vous n'avez pas de conseil. Pour créer un conseil, cliquez sur le bouton "Nouveau conseil" au-dessus!
+    favourites:
+      index:
+        title: Vos conseils favoris
+        no_favourites: Vous n'avez pas de conseil favori. Cliquez sur le bouton "Ajouter aux favoris" des conseils que vous aimez pour les voir içi.
   sessions:
     new:
       title: Connexion

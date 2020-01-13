@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   
     namespace :account do
       resources :tips, only: [:index]
+      resources :favourites, only: [:index]
     end
   
     resources :tips do
@@ -22,7 +23,9 @@ Rails.application.routes.draw do
   
     resources :sessions, only: [:new, :create, :destroy]
   
-    resources :users
+    resources :users do
+      resources :favourites, only: [:create, :destroy]
+    end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

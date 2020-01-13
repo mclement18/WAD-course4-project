@@ -45,4 +45,8 @@ module ApplicationHelper
     end
     @alert_id = SecureRandom.hex
   end
+
+  def favourite?(tip_id)
+    current_user.favourites.exists?(tip_id)
+  end
 end

@@ -10,6 +10,11 @@
         <%= link_to t('links.edit'), edit_tip_path(@tip), class: 'btn btn-outline-secondary ml-3' %>
       </div>
     <% end %>
+    <% if logged_in? %>
+      <div class="ml-3">
+        <%= render partial: 'favourites_button', locals: { tip: @tip } %>
+      </div>
+    <% end %>
   </div>
 
   <div class="card-body">

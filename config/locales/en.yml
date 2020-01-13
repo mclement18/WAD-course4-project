@@ -41,6 +41,7 @@ en:
     account: Account
     users: Users
     tips: Tips
+    favourites: Favourites
     edit: Edit
     delete: Delete
     new_tip: New tip
@@ -73,6 +74,8 @@ en:
     on_this_tip: on this tip
     edit: Edit tip
     show: Show more
+    add_favourites: Add to favourites
+    remove_favourites: Favourites
   comments:
     title: Comments
     added_by: Added by
@@ -99,6 +102,10 @@ en:
       index:
         title: Your tips
         no_tips: You have no tips. To create a tip, click on "New tip" button above!
+    favourites:
+      index:
+        title: Your favourite tips
+        no_favourites: You have no favourite tips. Click on "Add to favourites" button on tips that you like to see them here.
   sessions:
     new:
       title: Log in

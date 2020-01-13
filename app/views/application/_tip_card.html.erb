@@ -8,6 +8,9 @@
         <%= link_to t('tip_card.edit'), edit_tip_path(tip), class: 'btn btn-outline-secondary', role: 'button' %>
       <% end %>
       <%= link_to t('tip_card.show'), tip_path(tip), class: 'btn btn-outline-primary', role: 'button' %>
+      <% if logged_in? %>
+        <%= render partial: 'favourites_button', locals: { tip: tip } %>
+      <% end %>
     </div>
   </div>
 </div>
