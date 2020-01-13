@@ -201,4 +201,11 @@ fr:
   alerts:
     comment_creation_failed: Impossible de créé le commentaire.
     login_fail: Combination email et mot de passe invalide. Veuillez réessayer.
+  views:
+    pagination:
+      first: "&laquo; Première"
+      last: "Dernière &raquo;"
+      previous: "&lsaquo; Précédente"
+      next: "Suivante &rsaquo;"
+      truncate: "&hellip;"
     
