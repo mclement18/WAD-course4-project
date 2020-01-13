@@ -124,6 +124,9 @@ en:
         avatar: Avatar
         password: Password
         role: Role
+  time:
+    formats:
+      default: "%e %b %Y at %H:%M"
   errors:
     error: error
     header: 'prohibited this from being saved:'

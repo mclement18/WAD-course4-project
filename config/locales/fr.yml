@@ -93,6 +93,24 @@ fr:
         avatar: Avatar
         password: Mot de passe
         role: Rôle
+  date:
+    abbr_month_names:
+    - 
+    - jan
+    - fév
+    - mar
+    - avr
+    - mai
+    - juin
+    - juil
+    - août
+    - sept
+    - oct
+    - nov
+    - déc
+  time:
+    formats:
+      default: "%e %b %Y le %H:%M"
   datetime:
     distance_in_words:
       about_x_hours:
