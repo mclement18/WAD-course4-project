@@ -1,15 +1,23 @@
-if (typeof comment === 'undefined') {
-  let comment = {};
-}
-comment = {
-  body: '<%= @comment.body %>',
-  user: {
-    name: '<%= @comment.user.name %>',
-    path: '<%= user_path(@comment.user) %>',
-    avatar_url: '<%= @comment.user.avatar_url %>',
-  },
-  text1: '<%= t('comments.added_by') %> ',
-  text2: ' <%= t('comments.date', time: time_ago_in_words(@comment.created_at) ) %>'
-};
+<% if @comment_was_saved %>
+  if (typeof comment === 'undefined') {
+    let comment = {};
+  }
+  comment = {
+    body: '<%= @comment.body %>',
+    user: {
+      name: '<%= @comment.user.name %>',
+      path: '<%= user_path(@comment.user) %>',
+      avatar_url: '<%= @comment.user.avatar_url %>',
+    },
+    text1: '<%= t('comments.added_by') %> ',
+    text2: ' <%= t('comments.date', time: time_ago_in_words(@comment.created_at) ) %>'
+  };
 
-Comment.render(comment);
+  Comment.render(comment);
+<% end %>
+
+<% if flash.any? %>
+  <% flash.each do |name, message| %>
+    Alert.render('<%= message %>', '<%= name %>');
+  <% end %>
+<% end %>
