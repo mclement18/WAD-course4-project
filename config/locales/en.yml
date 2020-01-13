@@ -130,7 +130,7 @@ en:
   notices:
     account_updated: Profile successfully updated!
     comment_created: Comment was successfully created.
-    login_succes: Successfully logged in!
+    login_success: Successfully logged in!
     logout_success: Successfully logged out!
     tip_created: Tip was successfully created.
     tip_updated: Tip was successfully updated.

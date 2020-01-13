@@ -172,7 +172,7 @@ fr:
   notices:
     account_updated: Profile mis à jour avec succès!
     comment_created: Commentaire créé avec succès.
-    login_succes: Connecté avec succès!
+    login_success: Connecté avec succès!
     logout_success: Deconnecté avec succès!
     tip_created: Conseil créé avec succès.
     tip_updated: Conseil mis à jour avec succès.
