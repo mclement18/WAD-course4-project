@@ -4,8 +4,8 @@
 
 <div class="row mt-4 mb-4">
   <h1 class="col-12 text-center display-4">
-  <% if params[:q].present? %>
-    <%= t('.title_2') %> <em>"<%= params[:q] %>"</em>
+  <% if @search_term.present? %>
+    <%= t('.title_2') %> <em>"<%= @search_term %>"</em>
   <% else %>
     <%= t('.title_1') %>
   <% end %>
@@ -18,7 +18,7 @@
       <%= render partial: 'tip_card', locals: { tip: tip } %>
     <% end %>
   <% else %>
-    <p class="no-results mt-5 mb-5"><%= t('.no_match_found') %> <%= params[:q] %>... :(</p>
+    <p class="no-results mt-5 mb-5"><%= t('.no_match_found') %> <%= @search_term %>... :(</p>
   <% end %>
 </div>
 
