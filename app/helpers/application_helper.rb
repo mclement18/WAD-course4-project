@@ -38,4 +38,11 @@ module ApplicationHelper
   def is_this_users_index?
     request.fullpath == users_path
   end
+
+  def alert_id
+    if @alert_id.present?
+      return @alert_id
+    end
+    @alert_id = SecureRandom.hex
+  end
 end

@@ -1,18 +1,18 @@
 <% if notice %>
-<div class="alert alert-success alert_and_notice alert-dismissible fade show" role="notice">
+<div id="<%= alert_id %>" class="alert alert-success alert_and_notice alert-dismissible fade show" role="notice">
   <p class="mb-0"><%= notice %></p>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-  <script>Alert.autoDismiss();</script>
+  <script>Alert.autoDismiss('<%= alert_id %>');</script>
 </div>
 <% end %>
 <% if alert %>
-<div class="alert alert-danger alert_and_notice alert-dismissible fade show" role="alert">
+<div id="<%= alert_id %>" class="alert alert-danger alert_and_notice alert-dismissible fade show" role="alert">
   <p class="mb-0"><%= alert %></p>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-  <script>Alert.autoDismiss();</script>
+  <script>Alert.autoDismiss('<%= alert_id %>');</script>
 </div>
 <% end %>

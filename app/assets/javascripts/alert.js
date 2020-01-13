@@ -23,12 +23,13 @@ Alert.createContent = function(message) {
   return content;
 };
 
-Alert.create = function(message, type) {
+Alert.create = function(message, type, id) {
   const dismissButton = Alert.createDismissButton();
 
   const alertContent = Alert.createContent(message);
 
   const alert = document.createElement('div');
+  alert.id = id;
   alert.role = type;
   alert.className = 'alert alert_and_notice alert-dismissible fade show';
 
@@ -44,17 +45,17 @@ Alert.create = function(message, type) {
   return alert;
 };
 
-Alert.render = function(message, type) {
-  const alert = Alert.create(message, type);
+Alert.render = function(message, type, id) {
+  const alert = Alert.create(message, type, id);
 
   const header = document.querySelector('header');
   header.parentElement.insertBefore(alert, header.nextElementSibling);
 
-  Alert.autoDismiss();
+  Alert.autoDismiss(id);
 };
 
-Alert.autoDismiss = function() {
+Alert.autoDismiss = function(id) {
   setTimeout(() => {
-    $('.alert').alert('close')
+    $(`#${id}`).alert('close')
   }, 10000);
 };

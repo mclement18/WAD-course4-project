@@ -71,4 +71,11 @@ class ApplicationHelperTest < ActionView::TestCase
                 user: users(:one)
     assert_equal pluralize_tips(users(:one).tips), '2 tips'
   end
+
+  test "set alert_id only once" do
+    id_1 = alert_id
+    id_2 = alert_id
+    assert @alert_id.present?
+    assert_equal id_1, id_2
+  end
 end
