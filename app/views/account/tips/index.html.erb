@@ -14,7 +14,7 @@
   </h1>
   <%= link_to t('links.new_tip'), new_tip_path, class: 'btn btn-outline-primary', role: 'button' %>
 </div>
-<div class="row">
+<div id="tipsList" class="row">
 <% if @tips.any? %>
   <% @tips.each do |tip| %>
     <%= render partial: 'editable_tip_card', locals: { tip: tip } %>

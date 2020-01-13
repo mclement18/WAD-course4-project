@@ -1,4 +1,4 @@
-Tip.removeFromPage('<%= @tip.id %>');
+Tip.removeFromPage('<%= @tip.id %>', `<%= raw(t('account.tips.index.no_tips')) %>`);
 
 <% if flash.any? %>
   <% flash.each do |name, message| %>
