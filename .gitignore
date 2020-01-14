@@ -24,3 +24,12 @@
 
 # Ignore OS files
 .DS_Store
+
+# Ignore application configuration
+/config/application.yml
+
+# Ignore compiled assets in public folder
+/public/assets/*
+
+# Ignore script to run production mode
+/run-production.sh
