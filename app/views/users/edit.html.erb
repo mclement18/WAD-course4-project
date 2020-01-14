@@ -27,7 +27,7 @@
     <fieldset class="form-group row">
       <%= form.label :avatar, class: 'col-md-2 col-form-label' %>
       <div class="col-md-10">
-        <%= form.file_field :avatar, class: 'form-control' %>
+        <%= form.file_field :avatar, class: 'form-control', accept: '.jpg, .jpeg, .gif, .png' %>
       </div>
     </fieldset>
 
