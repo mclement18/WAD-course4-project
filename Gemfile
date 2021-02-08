@@ -68,7 +68,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'kaminari'
 
 # Use CarrierWave for file upload
-gem 'carrierwave', '~> 1.1.0'
+gem 'carrierwave', '~> 1.3.2'
 gem 'mini_magick'
 
 # Use Figaro to keep secret config values out of git
